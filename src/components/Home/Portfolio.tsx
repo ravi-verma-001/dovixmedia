@@ -44,15 +44,7 @@ const projects: Project[] = [
     tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
     result: "+240% Signups",
     color: "from-indigo-600 to-primary",
-    svgGraphic: (
-      <svg className="w-full h-full p-6 text-white/20" viewBox="0 0 200 120" fill="none">
-        <rect x="10" y="20" width="180" height="90" rx="8" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="2" />
-        <rect x="25" y="35" width="40" height="40" rx="4" fill="currentColor" fillOpacity="0.2" />
-        <line x1="80" y1="40" x2="160" y2="40" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-        <line x1="80" y1="55" x2="140" y2="55" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-        <line x1="80" y1="70" x2="120" y2="70" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-      </svg>
-    ),
+    imageUrl: "/case-studies/meta-ads-4.jpg",
   },
 ];
 
