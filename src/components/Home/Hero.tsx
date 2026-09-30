@@ -129,7 +129,7 @@ export default function Hero() {
                   <div className="flex items-center justify-between">
                     <div>
                       <span className="text-[10px] font-mono text-slate-400 uppercase">Active Meta & Google Campaign</span>
-                      <h4 className="text-xl font-heading font-bold text-slate-900 dark:text-white">+$48,250 Revenue Generated</h4>
+                      <h4 className="text-xl font-heading font-bold text-slate-900 dark:text-white">+₹4,82,500 Revenue Generated</h4>
                     </div>
                     <span className="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold">+340% ROI</span>
                   </div>
@@ -147,7 +147,7 @@ export default function Hero() {
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-gray-100 dark:border-slate-800">
                       <span className="text-[10px] text-slate-400 font-mono block">Cost Per Lead</span>
-                      <span className="text-sm font-bold text-slate-900 dark:text-white font-heading">$11.40 (Dropped 55%)</span>
+                      <span className="text-sm font-bold text-slate-900 dark:text-white font-heading">₹120 (Dropped 55%)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-gray-100 dark:border-slate-800">
                       <span className="text-[10px] text-slate-400 font-mono block">Qualified Leads</span>
