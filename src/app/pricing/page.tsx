@@ -9,7 +9,7 @@ import { Check, HelpCircle } from "lucide-react";
 const pricingPlans = [
   {
     name: "Starter Growth",
-    price: "$1,499",
+    price: "₹25,000",
     period: "month",
     desc: "Best for local businesses looking to establish visibility and capture basic leads.",
     features: [
@@ -22,7 +22,7 @@ const pricingPlans = [
   },
   {
     name: "Revenue Scale",
-    price: "$2,999",
+    price: "₹50,000",
     period: "month",
     isPopular: true,
     desc: "Ideal for growing businesses looking to scale acquisition across multiple search channels.",
@@ -37,7 +37,7 @@ const pricingPlans = [
   },
   {
     name: "Enterprise Dominance",
-    price: "$5,499",
+    price: "₹1,20,000",
     period: "month",
     desc: "For brands requiring complete custom funnels, landing pages, and multi-channel ads.",
     features: [
@@ -51,7 +51,7 @@ const pricingPlans = [
 ];
 
 export default function PricingPage() {
-  const [budget, setBudget] = useState(2500);
+  const [budget, setBudget] = useState(35000);
   const [channels, setChannels] = useState<string[]>(["SEO"]);
 
   const toggleChannel = (ch: string) => {
@@ -63,7 +63,7 @@ export default function PricingPage() {
   };
 
   // Calculation logic for estimated outcome
-  const estLeads = Math.floor((budget / 100) * 1.8 * (channels.length ? channels.length * 0.9 : 0.5));
+  const estLeads = Math.floor((budget / 1000) * 1.8 * (channels.length ? channels.length * 0.9 : 0.5));
   const estROI = channels.length > 0 ? "180% - 260%" : "0%";
 
   return (
@@ -114,7 +114,7 @@ export default function PricingPage() {
 
                 <ul className="flex flex-col gap-3.5 mb-8">
                   {plan.features.map((feat, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm text-slate-650 dark:text-slate-300 leading-snug">
+                    <li key={i} className="flex items-start gap-2.5 text-sm text-slate-600 dark:text-slate-300 leading-snug">
                       <Check className="w-4.5 h-4.5 text-primary flex-shrink-0 mt-0.5" />
                       {feat}
                     </li>
@@ -182,22 +182,22 @@ export default function PricingPage() {
                     Monthly Marketing Budget
                   </span>
                   <span className="text-lg font-heading font-extrabold text-primary">
-                    ${budget.toLocaleString()}
+                    ₹{budget.toLocaleString("en-IN")}
                   </span>
                 </div>
                 <input
                   type="range"
-                  min="1000"
-                  max="15000"
-                  step="500"
+                  min="10000"
+                  max="150000"
+                  step="5000"
                   value={budget}
                   onChange={(e) => setBudget(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-primary"
                 />
                 <div className="flex justify-between text-[10px] text-slate-400 mt-2 font-mono">
-                  <span>$1,000</span>
-                  <span>$7,500</span>
-                  <span>$15,000</span>
+                  <span>₹10,000</span>
+                  <span>₹75,000</span>
+                  <span>₹1,50,000</span>
                 </div>
               </div>
             </div>

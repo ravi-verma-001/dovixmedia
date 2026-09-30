@@ -10,7 +10,7 @@ export default function Contact() {
     phone: "",
     company: "",
     service: "Web Design",
-    budget: "$2,000 - $5,000",
+    budget: "₹20,000 - ₹50,000",
     message: "",
   });
 
@@ -28,7 +28,7 @@ export default function Contact() {
           phone: "",
           company: "",
           service: "Web Design",
-          budget: "$2,000 - $5,000",
+          budget: "₹20,000 - ₹50,000",
           message: "",
         });
       }, 1000);
@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   const services = ["Web Design", "SEO Audit & Strategy", "Google PPC Ads", "Meta Social Campaigns", "Local GBP Rank"];
-  const budgets = ["<$2,000", "$2,000 - $5,000", "$5,000 - $10,000", "$10,000+"];
+  const budgets = ["< ₹20,000", "₹20,000 - ₹50,000", "₹50,000 - ₹100,000", "₹100,000+"];
 
   return (
     <section id="contact" className="py-24 bg-white dark:bg-dark-bg relative overflow-hidden">
@@ -86,7 +86,7 @@ export default function Contact() {
                 <div>
                   <span className="block text-xs text-slate-400">Office Location</span>
                   <span className="text-base font-semibold text-slate-800 dark:text-white">
-                    Premium Tech Park, Sector 62, Noida, India
+                    Vidisha, Madhya Pradesh - 464001
                   </span>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Contact() {
             <div className="w-full h-48 rounded-3xl overflow-hidden border border-gray-200 dark:border-slate-800 relative bg-slate-100 dark:bg-slate-900 flex items-center justify-center">
               <MapPin className="w-8 h-8 text-primary animate-bounce absolute" />
               <div className="text-center text-xs text-slate-400 dark:text-slate-500 font-mono mt-12">
-                Noida, Uttar Pradesh, India Map View
+                Vidisha, Madhya Pradesh - 464001 Map View
               </div>
             </div>
           </div>
