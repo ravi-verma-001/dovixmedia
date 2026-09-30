@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #6C4BFF;
-  --color-primary-hover: #583cd6;
+  --color-primary: #E11D48;
+  --color-primary-hover: #BE123C;
   --color-secondary: #0F172A;
-  --color-accent: #3B82F6;
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
   --color-light-gray: #F8FAFC;
   --color-dark-bg: #070A14;
   --color-dark-card: #0F1629;
@@ -64,22 +65,32 @@ body {
 }
 
 .bento-card:hover {
-  border-color: rgba(108, 75, 255, 0.4);
-  box-shadow: 0 20px 40px -15px rgba(108, 75, 255, 0.12);
+  border-color: rgba(225, 29, 72, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(225, 29, 72, 0.15);
   transform: translateY(-4px);
 }
 
 /* Gradient Mesh Background */
 .bg-mesh {
   background-image: 
-    radial-gradient(at 0% 0%, rgba(108, 75, 255, 0.08) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.08) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(225, 29, 72, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(37, 99, 235, 0.08) 0px, transparent 50%);
 }
 
 .dark .bg-mesh {
   background-image: 
-    radial-gradient(at 0% 0%, rgba(108, 75, 255, 0.15) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.12) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(225, 29, 72, 0.16) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(37, 99, 235, 0.14) 0px, transparent 50%);
+}
+
+/* Mouse Glow Spot */
+.glow-spot {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(225, 29, 72, 0.14) 0%, rgba(37, 99, 235, 0.12) 50%, transparent 70%);
+  transform: translate(-50%, -50%);
+  filter: blur(45px);
 }
 
 /* Custom Scrollbar */
@@ -92,26 +103,26 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6C4BFF;
+  background: linear-gradient(180deg, #E11D48 0%, #2563EB 100%);
   border-radius: 4px;
 }
 
 /* Text Gradients */
 .text-gradient {
-  background: linear-gradient(135deg, #6C4BFF 0%, #3B82F6 100%);
+  background: linear-gradient(135deg, #E11D48 0%, #2563EB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-warm {
-  background: linear-gradient(135deg, #FF6B6B 0%, #6C4BFF 100%);
+  background: linear-gradient(135deg, #F43F5E 0%, #3B82F6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Chat bubble style for human reviews */
 .chat-bubble-client {
-  background: #0084FF;
+  background: #2563EB;
   color: white;
   border-radius: 18px 18px 4px 18px;
 }

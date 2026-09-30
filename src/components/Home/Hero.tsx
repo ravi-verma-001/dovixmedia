@@ -137,8 +137,8 @@ export default function Hero() {
                   {/* SVG Ad Graph */}
                   <div className="h-36 w-full bg-slate-50 dark:bg-slate-900/50 rounded-2xl p-3 flex items-end border border-gray-100 dark:border-slate-800">
                     <svg className="w-full h-full overflow-visible" viewBox="0 0 300 120">
-                      <path d="M 0,100 Q 60,80 120,40 T 240,20 L 300,5" fill="none" stroke="#6C4BFF" strokeWidth="4" />
-                      <circle cx="120" cy="40" r="5" fill="#6C4BFF" />
+                      <path d="M 0,100 Q 60,80 120,40 T 240,20 L 300,5" fill="none" stroke="#E11D48" strokeWidth="4" />
+                      <circle cx="120" cy="40" r="5" fill="#E11D48" />
                       <circle cx="240" cy="20" r="5" fill="#3B82F6" />
                       <circle cx="300" cy="5" r="5" fill="#10B981" />
                     </svg>
